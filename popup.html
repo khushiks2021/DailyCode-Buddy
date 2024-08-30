@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Coding Challenge</title>
+    
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+
+   
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Daily Coding Challenge</h1>
+        
+        <!-- Username Input Section -->
+        <div class="content-box">
+            <label for="username">Enter your Codeforces Username:</label>
+            <div class="username-input">
+                <input type="text" id="username" placeholder="Enter username" />
+                <button id="saveUsernameBtn" class="action-btn">Save</button>
+            </div>
+            <div id="userRatingDisplay" class="user-rating"></div>
+        </div>
+        
+        <!-- Problem Display Section -->
+        <div class="content-box problem-section">
+            <div id="problem" class="problem-display">
+                Today's Problem will appear here!
+            </div>
+            <div class="problem-actions">
+                <button id="newProblemBtn" class="action-btn">
+                    <i class="fas fa-sync-alt"></i> Get New Problem
+                </button>
+                <button id="bookmarkBtn" class="icon-btn" title="Bookmark Problem">
+                    <i class="fas fa-bookmark"></i> Save
+                </button>
+            </div>
+        </div>
+        
+        <!-- Bookmarks Section -->
+        <section>
+            <h2>Your Bookmarks</h2>
+            <div id="bookmarks" class="content-box bookmarks-section">
+                <div class="bookmark-item">
+                    <a href="#" class="bookmark-link">Dummy Problem Name</a>
+                    <button class="delete-bookmark-btn" title="Delete Bookmark">
+                        <i class="fas fa-trash"></i> Delete
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Upcoming Contests Section -->
+        <section>
+            <h2>Upcoming Contests</h2>
+            <div id="contestFilters" class="contest-filters">
+                <label for="durationFilter">Filter by Duration:</label>
+                <select id="durationFilter">
+                    <option value="all">All</option>
+                    <option value="short">Short (<= 2 hours)</option>
+                    <option value="medium">Medium (2-5 hours)</option>
+                    <option value="long">Long (> 5 hours)</option>
+                </select>
+                <button id="refreshContestsBtn" class="action-btn" title="Refresh Contests">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+            <div id="contests" class="content-box contests-section">
+                Loading upcoming contests...
+            </div>
+        </section>
+        
+        <!-- Streak Section -->
+        <section>
+            <h2>Your Streak</h2>
+            <div id="streak" class="content-box streak-section">
+                Loading streak data...
+            </div>
+        </section>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="toggle-btn">
+            <i class="fas fa-moon"></i> Toggle Dark Mode
+        </button>
+    </div>
+    
+    <!-- Custom Script -->
+    <script src="popup.js"></script>
+</body>
+</html>

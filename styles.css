@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Default styles for light mode */
+h1, h2 {
+    margin-bottom: 12px;
+    color: #111111; /* Dark color for light mode */
+    font-size: 1.5em; /* Reduced font size */
+}
+
+/* Dark mode styles */
+.dark-mode h1, .dark-mode h2 {
+    color: #fff; /* White color for dark mode */
+}
+
+
+.content-box {
+    background-color: #fafafa;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Container for Icons (Streak and Dark Mode) */
+.icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the icons to the right */
+}
+
+.streak-icon {
+    margin-right: 12px; /* Adds space between the streak icon and dark mode toggle */
+}
+
+/* Username Input Styles */
+.username-input {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+#username {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#saveUsernameBtn {
+    margin-left: 8px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 4px 8px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+#saveUsernameBtn:hover {
+    background-color: #218838;
+}
+
+/* User Rating Display */
+.user-rating {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #007bff;
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Problem Section Styles */
+.problem-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px; /* Move the section upward */
+}
+
+.problem-display {
+    font-size: 14px; /* Reduced font size */
+    margin-bottom: 8px;
+    word-wrap: break-word;
+}
+
+.problem-display a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.problem-display a:hover {
+    text-decoration: underline;
+}
+
+.problem-actions {
+    display: flex;
+    align-items: center;
+}
+
+#newProblemBtn {
+    margin-right: 8px;
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+}
+
+.icon-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Reduced font size */
+    color: #333;
+    transition: color 0.3s;
+}
+
+.icon-btn:hover {
+    color: #007bff;
+}
+
+/* Bookmarks Section Styles */
+.bookmarks-section .bookmark-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.bookmark-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+    flex: 1;
+    margin-right: 8px;
+}
+
+.delete-bookmark-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 16px; /* Reduced font size */
+    transition: color 0.3s;
+}
+
+.delete-bookmark-btn:hover {
+    color: #a71d2a;
+}
+
+/* Contest Filters Styles */
+.contest-filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#durationFilter {
+    margin-left: 8px;
+    padding: 4px;
+    font-size: 14px; /* Reduced font size */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#refreshContestsBtn {
+    margin-left: auto;
+    padding: 6px 10px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Contests Section Styles */
+.contests-section .contest-item {
+    margin-bottom: 8px;
+}
+
+.contest-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px; /* Reduced font size */
+}
+
+.contest-link:hover {
+    text-decoration: underline;
+}
+
+.contest-date {
+    display: block;
+    color: #555;
+    font-size: 12px; /* Reduced font size */
+    margin-top: 2px;
+}
+
+/* Streak Section Styles */
+.streak-section {
+    text-align: center;
+    font-size: 18px; /* Reduced font size */
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.dark-mode #container {
+    background-color: #4d4c4c;
+    box-shadow: none;
+}
+
+.dark-mode .content-box {
+    background-color: #3a3a3a;
+    border-color: #555;
+}
+
+.dark-mode #username {
+    background-color: #2c2c2c;
+    border-color: #555;
+    color: #f0f0f0;
+}
+
+.dark-mode .icon-btn,
+.dark-mode .delete-bookmark-btn {
+    color: #f0f0f0;
+}
+
+.dark-mode .icon-btn:hover,
+.dark-mode .delete-bookmark-btn:hover {
+    color: #1e90ff;
+}
+
+.dark-mode .bookmark-link,
+.dark-mode .contest-link {
+    color: #1e90ff;
+}
+
+.dark-mode .contest-date {
+    color: #ccc;
+}
+
+.dark-mode .streak-section {
+    color: #20c997;
+}
+
+/* Button Styles */
+.action-btn,
+.toggle-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    padding: 6px 12px; /* Reduced padding */
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.action-btn i,
+.toggle-btn i {
+    margin-right: 6px;
+    font-size: 10px; /* Reduced font size */
+}
+
+.action-btn:hover,
+.toggle-btn:hover {
+    background-color: #0056b3;
+}

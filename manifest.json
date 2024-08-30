@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Daily Coding Challenge",
+    "version": "1.0",
+    "description": "Get a daily coding problem and stay updated on upcoming contests!",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "icon128.png"
+      }
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://codeforces.com/*"],
+          "js": ["content.js"],
+          "css": ["darkMode.css"]
+        }
+    ]
+}

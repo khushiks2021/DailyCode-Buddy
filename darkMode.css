@@ -1,0 +1,41 @@
+/* dark.css */
+
+/* General dark mode styles */
+body, .content, .roundbox, .roundbox-lt {
+    background-color: #121212 !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+}
+
+.header, .footer, .side, .menubar, .roundbox, .roundbox-lt {
+    background-color: #1e1e1e ;
+    color: #ffffff
+}
+
+a, .link, .header a, .footer a, .menubar a {
+    color: #76a9ff !important; /* Bright link color */
+}
+
+.input, .textarea, .btn, .btn-primary {
+    background-color: #333333 !important; /* Dark background for inputs and buttons */
+    color: #ffffff !important; /* White text */
+    border: 1px solid #444444 !important; /* Slightly lighter border */
+}
+
+.table, .table tbody tr, .datatable, .datatable tbody tr {
+    background-color: #1e1e1e !important; /* Dark background for tables */
+}
+
+.table th, .datatable th {
+    background-color: #333333 !important; /* Dark background for table headers */
+    color: #ffffff !important; /* White text for headers */
+}
+
+.roundbox-lt {
+    background-color: #2c2c2c !important; /* Dark background for roundbox-lt */
+}
+
+/* Math section styles */
+.math, .mtext, .msup, .msub, .mi, .mo, .mn {
+    color: #ffffff !important; /* White text for math sections */
+    background-color: transparent !important; /* Prevent background color from interfering */
+}
