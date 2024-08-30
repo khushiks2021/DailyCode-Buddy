@@ -20,8 +20,9 @@ Your daily coding companion delivering challenges, contest updates, and personal
 
 ## Screenshots
 
-Here are some screenshots of the extension in action:
-![Example Screenshot](assets/screenshot_2024_08_30_12_59_38.png)
-![Example Screenshot](assets/Screenshot 2024-08-30 at 12.59.38.png)
+![Example Screenshot](image1.png)
+
+
+![Example Screenshot](image2.png)
 
 
